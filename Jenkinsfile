@@ -4,27 +4,26 @@ pipeline{
    
    stages{
       
-      stage('building'){
-      
-          steps{
-            echo 'are you working'
-          }
-      }
-    
-   }
-   
-   post{
-    
-    always{
-    
-        echo 'archiving artifacts'     
-    
-    }
-    
+           stage('building the project'){
 
+                         when {
+                           branch 'master'
+                         }
+
+                         steps{
+                           echo 'are you working'
+                         }
+
+                         post{
+
+                          always{
+                             echo 'archiving artifacts'     
+                          }
+
+             }
     
-   
-   
    }
+   
+ }
 
 }
