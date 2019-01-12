@@ -6,7 +6,7 @@ pipeline{
       
       stage('building'){
       
-          step{
+          steps{
             echo 'are you working'
           }
       }
