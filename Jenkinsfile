@@ -14,6 +14,11 @@ pipeline{
    }
    
    post{
+    
+    steps('archive artifacts'){
+    
+        echo 'archiving artifacts'
+    }
    
    
    }
