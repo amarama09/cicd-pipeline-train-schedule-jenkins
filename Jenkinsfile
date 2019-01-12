@@ -37,7 +37,8 @@ pipeline{
                          post{
 
                           always{
-                             echo 'archiving artifacts'     
+                             echo 'archiving artifacts'   
+                             archiveArtifacts 'dist/trainSchedule.zip'
                           }
 
              }
