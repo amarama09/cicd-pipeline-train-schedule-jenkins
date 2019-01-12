@@ -17,8 +17,8 @@ pipeline{
                 echo "show me user/bin"
                 ls -al /usr/bin
                 whoami
-                npm --version
-                node --version
+                npm -v
+                node -v
            
            }
           }
