@@ -15,10 +15,14 @@ pipeline{
    
    post{
     
-    steps('archive artifacts'){
+    always{
     
-        echo 'archiving artifacts'
+        echo 'archiving artifacts'     
+    
     }
+    
+
+    
    
    
    }
