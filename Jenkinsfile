@@ -11,14 +11,7 @@ pipeline{
            steps{
            
            
-                echo  "Hello Jenkins Pipeline"
-                ls -al
-                pwd
-                echo "show me user/bin"
-                ls -al /usr/bin
-                whoami
-                npm -v
-                node -v
+               node -v
            
            }
           }
