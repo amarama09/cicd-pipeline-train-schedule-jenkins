@@ -6,9 +6,9 @@ pipeline{
       
            stage('building the project'){
 
-                         when {
+                        /* when {
                            branch 'master'
-                         }
+                         }*/
 
                          steps{
                            echo 'are you working'
