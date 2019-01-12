@@ -30,7 +30,8 @@ pipeline{
                          }*/
 
                          steps{
-                           echo 'are you working'
+                           echo 'BUILDING PROJECT'
+                           sh './gradlew build'
                          }
 
                          post{
