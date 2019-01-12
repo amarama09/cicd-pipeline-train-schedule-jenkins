@@ -31,7 +31,7 @@ pipeline{
 
                          steps{
                            echo 'BUILDING PROJECT'
-                           sh './gradlew build'
+                           sh './gradlew build  --no-daemon'
                          }
 
                          post{
