@@ -9,9 +9,15 @@ pipeline{
           stage('sanity stage'){
           
            steps{
+                sh 'echo  "Hello Jenkins Pipeline"'
+                sh 'ls -al'
+                sh 'pwd'
+                sh 'echo "show me user/bin"'
+                sh 'ls -al /usr/bin'
+                sh 'whoami'
+                sh 'npm -v'
            
-           
-               node -v
+                sh 'node -v'
            
            }
           }
